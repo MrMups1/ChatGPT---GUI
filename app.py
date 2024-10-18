@@ -13,6 +13,11 @@ openai.api_key = os.getenv("sk-proj-6JM36BmM4tGtOsYpxW3XkIg0wUdkmVDwgT7BjoNb5d4N
 def home():
     return "Welcome to the ChatGPT API!"
 
+# Route to serve the HTML frontend
+@app.route('/')
+def index():
+    return render_template('index.html')
+
 @app.route('/chat', methods=['POST'])
 def chat():
     data = request.json
