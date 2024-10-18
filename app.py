@@ -5,7 +5,7 @@ import os
 app = Flask(__name__)
 
 # Set your OpenAI API key here
-openai.api_key = os.getenv("OPENAI-KEY")
+openai.api_key = os.getenv("OPENAI-KEY-no issues")
 
 
 # Route for root URL
